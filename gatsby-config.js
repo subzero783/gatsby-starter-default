@@ -32,6 +32,10 @@ module.exports = {
         path: `${__dirname}/content/blog`,
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -49,26 +53,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`400`, `500`, `700`],
-          },
-          {
-            family: `Rubik`,
-            variants: [`400`, `500`, `600`, `700`],
-          },
+          `roboto\: 400, 500, 700`,
+          `rubik\: 400, 500, 600, 700`,
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
+        display: "swap",
       },
     },
   ],
