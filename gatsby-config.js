@@ -9,9 +9,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `My Gatsby Blog`,
+    description: `Blog of DeveloperGus.com`,
+    author: `Developer Gus`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -23,6 +23,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/content/blog`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -42,18 +49,27 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-yaml`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        typeName: `Event`,
+        fonts: [
+          {
+            family: `Oswald`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`, `500`, `700`],
+          },
+          {
+            family: `Rubik`,
+            variants: [`400`, `500`, `600`, `700`],
+          },
+        ],
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content-events`,
-        path: `./content/events/`,
-      },
-      __key: "content-events",
     },
   ],
 }
