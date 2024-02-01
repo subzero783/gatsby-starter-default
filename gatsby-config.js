@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `My Gatsby Blog`,
+    title: `Developer Gus Blog`,
     description: `Blog of DeveloperGus.com`,
     author: `Developer Gus`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://developergus.com/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
