@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Developer Gus Blog`,
-    description: `Blog of DeveloperGus.com`,
+    description: `Web Development and Search Engine Optimization by Unleashing Digital Brilliance with Developer Gus. Navigating the World of Web Design, Development and Beyond. Empowering Your Business with SEO and Google Ads Mastery.`,
     author: `Developer Gus`,
     siteUrl: `https://developergus.com/`,
   },
@@ -44,12 +44,12 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#9977f6`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        // theme_color: `#9977f6`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `./static/logos/developer-gus-logo-white.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -58,6 +58,7 @@ module.exports = {
         fonts: [
           `roboto\: 400, 500, 700`,
           `rubik\: 400, 500, 600, 700`,
+          `syne\: 400, 500, 600, 700`,
           `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
         display: "swap",

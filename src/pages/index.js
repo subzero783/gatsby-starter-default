@@ -8,8 +8,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Web Development and Search Engine Optimization "
-        description="Developer Gus"
+        title="Web Development and Search Engine Optimization"
+        description="Unleashing Digital Brilliance with Developer Gus. Navigating the World of Web Design, Development and Beyond. Empowering Your Business with SEO and Google Ads Mastery."
       />
       <div className="my-4">
         <h1 className="text-xl">Home page</h1>
