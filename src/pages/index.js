@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Hero from "../components/Hero/Hero"
 
 const IndexPage = ({ data }) => {
   return (
@@ -11,12 +12,9 @@ const IndexPage = ({ data }) => {
         title="Web Development and Search Engine Optimization"
         description="Unleashing Digital Brilliance with Developer Gus. Navigating the World of Web Design, Development and Beyond. Empowering Your Business with SEO and Google Ads Mastery."
       />
-      <div className="my-4">
-        <h1 className="text-xl">Home page</h1>
-        <h2 className="text-lg">Blog Posts</h2>
-      </div>
+      <Hero />
       <ul className="my-9">
-        {data.allMarkdownRemark.edges.map(edge => {
+        {/* {data.allMarkdownRemark.edges.map(edge => {
           console.log("edge", edge)
           const { title, description, date } = edge.node.frontmatter
           return (
@@ -26,7 +24,7 @@ const IndexPage = ({ data }) => {
               <p>{description}</p>
             </li>
           )
-        })}
+        })} */}
       </ul>
     </Layout>
   )

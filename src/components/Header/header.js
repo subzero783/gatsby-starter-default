@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import MenuOne from "../menus/MenuOne/MenuOne"
 import SocialMedia from "../SocialMedia/SocialMedia"
-import logo from "../../../static/logos/developer-gus-logo-white.png"
+import logo from "../../../static/images/logos/developer-gus-logo-white.png"
 
 export default function Header() {
   return (

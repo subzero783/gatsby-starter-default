@@ -30,14 +30,8 @@ const Layout = ({ children }) => {
         siteDescription={data.site.siteMetadata?.description || `Description`}
         siteTitle={data.site.siteMetadata?.title || `Title`}
       />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main className="mx-auto block max-w-screen-xl">{children}</main>
+      <div>
+        <main className="mx-auto block">{children}</main>
       </div>
       <Footer />
     </>

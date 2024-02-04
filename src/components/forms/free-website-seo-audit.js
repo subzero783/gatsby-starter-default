@@ -2,7 +2,7 @@ import * as React from "react"
 
 export default function FreeWebsiteSeoAudit() {
   return (
-    <>
+    <div className="form-free-website-audit">
       <div
         dangerouslySetInnerHTML={{
           __html: `
@@ -46,6 +46,6 @@ export default function FreeWebsiteSeoAudit() {
             `,
         }}
       />
-    </>
+    </div>
   )
 }

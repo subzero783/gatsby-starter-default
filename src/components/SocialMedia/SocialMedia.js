@@ -7,8 +7,8 @@ import {
   faPinterestSquare,
   faTiktok,
   faYoutube,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
-import xLogo from "../../../static/logos/twitter.png"
 
 export default function SocialMedia() {
   return (
@@ -45,7 +45,7 @@ export default function SocialMedia() {
       </li>
       <li>
         <a href="https://twitter.com/developer_gus">
-          <img src={xLogo} alt="X social media logo" className="x-logo" />
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
       </li>
     </ul>
