@@ -103,9 +103,67 @@ header {
         min-height: 500px;
     }
     .text-side {
-        h1 {
-        }
         h2 {
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+        }
+    }
+    .form-side {
+        .hero-form-container {
+            background-color: #fff;
+            padding: 30px 30px 30px;
+            // label {
+            //     color: #6c6a72;
+            // }
+            input,
+            textarea {
+                padding: 14px 20px;
+                outline: 0;
+                background-color: rgba(241, 238, 246, 0.5);
+                border: 1px solid rgba(241, 238, 246, 0.5);
+                color: #686a6f;
+                font-size: 1rem;
+                width: 100%;
+            }
+            label {
+                margin: 5px 0;
+            }
+            .privacyPolicy {
+                margin: 5px 0 0 0;
+            }
+            .submit {
+                margin-top: 16px;
+                background-image: linear-gradient(to right, #9977f6, #7243f2);
+                border-radius: 0;
+                border: 1px solid transparent;
+                color: #fff;
+                text-decoration: unset;
+                font-size: 14px;
+                line-height: 1.4;
+                margin-bottom: 0;
+                padding: 1.2rem 3.2rem;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                text-align: center;
+                overflow: hidden;
+                display: inline-block;
+                transition: all 0.2s ease-in-out;
+                width: 100%;
+                max-width: -webkit-fit-content;
+                max-width: -moz-fit-content;
+                max-width: fit-content;
+                font-family: "Syne", sans-serif;
+                position: relative;
+                text-transform: uppercase;
+                &:hover,
+                &:active,
+                &:focus {
+                    background-image: linear-gradient(to right, #7243f2, #9977f6);
+                    border: 1px solid #7243f2;
+                }
+            }
+            @media screen and (max-width: 991px) {
+                padding: 30px 15px 30px;
+            }
         }
     }
 }

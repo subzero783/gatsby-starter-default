@@ -5,7 +5,7 @@ import FreeWebsiteSeoAudit from "../forms/free-website-seo-audit"
 export default function Hero() {
   return (
     <section className="hero" style={{ backgroundImage: `url(${bgImageOne})` }}>
-      <div className="container mx-auto grid grid-cols-2">
+      <div className="container mx-auto grid gap-8 grid-cols-2">
         <div className="text-side">
           <span className="small-text mb-5">Welcome to Developer Gus</span>
           <h1 className="headline mb-6">
@@ -18,7 +18,12 @@ export default function Hero() {
           </h2>
         </div>
         <div className="form-side">
-          <FreeWebsiteSeoAudit />
+          <div className="hero-form-container">
+            <h2 class="subtitle">
+              <span>Free Website SEO and Traffic Audit!</span>
+            </h2>
+            <FreeWebsiteSeoAudit />
+          </div>
         </div>
       </div>
     </section>

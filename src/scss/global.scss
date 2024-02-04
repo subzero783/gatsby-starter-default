@@ -8,3 +8,54 @@ section {
     padding-bottom: 80px;
     overflow: hidden;
 }
+
+.button-1 {
+    cursor: pointer;
+    background-image: linear-gradient(to right, #9977f6, #7243f2);
+    border-radius: 0;
+    border: 1px solid transparent;
+    color: #fff;
+    text-decoration: unset;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 0;
+    padding: 1.2rem 3.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-align: center;
+    border-width: 0;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    font-family: "Syne", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    > span {
+        z-index: 2;
+        position: relative;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #7243f2;
+        border-color: #7243f2;
+        &:before {
+            opacity: 1;
+            width: 100%;
+            background-image: linear-gradient(to right, #7243f2, #9977f6);
+        }
+    }
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        background-image: linear-gradient(to right, #7243f2, #9977f6);
+        transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        z-index: -1;
+    }
+}
