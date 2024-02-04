@@ -101,19 +101,32 @@ header {
     padding-top: 30px;
     > .container {
         min-height: 500px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            flex-flow: column nowrap;
+        }
     }
     .text-side {
+        width: 60%;
+        margin-right: 40px;
         h2 {
             font-family: "Roboto", Arial, Helvetica, sans-serif;
         }
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+        }
     }
     .form-side {
+        width: 40%;
         .hero-form-container {
             background-color: #fff;
             padding: 30px 30px 30px;
-            // label {
-            //     color: #6c6a72;
-            // }
+            h2 {
+                color: $color-highlight;
+                font-weight: 600;
+            }
             input,
             textarea {
                 padding: 14px 20px;
@@ -126,6 +139,7 @@ header {
             }
             label {
                 margin: 5px 0;
+                color: $color-gray;
             }
             .privacyPolicy {
                 margin: 5px 0 0 0;
@@ -163,6 +177,228 @@ header {
             }
             @media screen and (max-width: 991px) {
                 padding: 30px 15px 30px;
+            }
+            @media screen and (max-width: 768px) {
+                margin-top: 40px;
+            }
+        }
+    }
+    .text-side,
+    .form-side {
+        @media screen and (max-width: 991px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+.services {
+    .services-columns-container {
+        > li {
+            &.box {
+                position: relative;
+                overflow: hidden;
+                height: 100%;
+                padding: 45px 50px 45px;
+                background-color: #fff;
+                box-shadow: 0 10px 60px rgba(0, 0, 0, 0.07);
+                transition: all 0.3s linear;
+                margin-right: 15px;
+                margin-bottom: 20px;
+                text-decoration: unset;
+                z-index: 2;
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+                &:nth-child(1) {
+                    .count {
+                        &:before {
+                            content: "01";
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    .count {
+                        &:before {
+                            content: "02";
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    .count {
+                        &:before {
+                            content: "03";
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    .count {
+                        &:before {
+                            content: "04";
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    .count {
+                        &:before {
+                            content: "05";
+                        }
+                    }
+                }
+                &:nth-child(6) {
+                    .count {
+                        &:before {
+                            content: "06";
+                        }
+                    }
+                }
+                &:nth-child(7) {
+                    .count {
+                        &:before {
+                            content: "07";
+                        }
+                    }
+                }
+                &:nth-child(8) {
+                    .count {
+                        &:before {
+                            content: "08";
+                        }
+                    }
+                }
+                .count {
+                    position: absolute;
+                    right: -40px;
+                    top: -70px;
+                    height: 170px;
+                    width: 170px;
+                    background-color: #7243f2;
+                    color: #fff;
+                    border-radius: 50%;
+                    transition: all 0.3s linear;
+                    &:before {
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-30px, 10px);
+                        position: absolute;
+                        color: #f6f2f0;
+                        font-size: 30px;
+                        line-height: 1;
+                        font-family: "Syne", sans-serif;
+                        font-weight: 600;
+                        font-style: normal;
+                    }
+                }
+                .icon {
+                    position: relative;
+                    display: block;
+                    font-size: 62px;
+                    color: #7243f2;
+                    font-weight: 400;
+                    line-height: 1em;
+                    transition: all 0.3s linear;
+                    margin-bottom: 10px;
+                    img {
+                        max-width: 60px;
+                    }
+                }
+                .title {
+                    h3 {
+                        font-size: 22px !important;
+                        color: #fff;
+                        @media screen and (min-width: 768px) {
+                            color: #212529;
+                        }
+                    }
+                }
+                .box-text {
+                    max-height: 0;
+                    transition: max-height 0.15s ease-in-out;
+                    overflow: hidden;
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #7243f2;
+                    transform: scale(0);
+                    transform-origin: right top;
+                    border-radius: 0 0 0 500px;
+                    content: "";
+                    z-index: -1;
+                    transition: all 0.3s linear;
+                }
+                @media screen and (min-width: 768px) {
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        background-color: rgba(255, 255, 255, 0.2);
+                        .icon {
+                            img {
+                                -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(24deg) brightness(150%)
+                                    contrast(101%);
+                                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(24deg) brightness(150%)
+                                    contrast(101%);
+                            }
+                        }
+                        .title h3,
+                        .box-text {
+                            color: #fff;
+                        }
+                        .box-text {
+                            max-height: 500px;
+                            transition: max-height 0.25s ease-in;
+                        }
+                        &:after {
+                            transform: scale(1.5);
+                            opacity: 1;
+                        }
+                    }
+                }
+                @media screen and (max-width: 991px) {
+                    padding: 45px 10px;
+                    &:nth-child(3n) {
+                        margin-right: 15px;
+                    }
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                }
+                @media screen and (max-width: 768px) {
+                    .icon {
+                        img {
+                            -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(24deg) brightness(150%)
+                                contrast(101%);
+                            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(24deg) brightness(150%)
+                                contrast(101%);
+                        }
+                    }
+                    .title,
+                    .box-text {
+                        color: #fff;
+                    }
+                    .box-text {
+                        max-height: 500px;
+                        transition: max-height 0.25s ease-in;
+                    }
+                    &:after {
+                        transform: scale(1.5);
+                        opacity: 1;
+                    }
+                }
+                @media screen and (max-width: 576px) {
+                    margin-left: 15px;
+                    &:nth-child(2n) {
+                        margin-right: 15px;
+                    }
+                }
             }
         }
     }

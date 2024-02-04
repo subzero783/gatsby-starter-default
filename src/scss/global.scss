@@ -6,7 +6,43 @@ img {
 section {
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
     overflow: hidden;
+}
+
+.text-with-line {
+    position: relative;
+    letter-spacing: 0.02em;
+    color: #6a6a6a;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+    &:before {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        margin-top: -1px;
+        height: 2px;
+        width: 26px;
+        margin-left: 10px;
+        background: linear-gradient(to left, #ae8fff, #7243f2);
+        content: "";
+    }
+    &:after {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        margin-top: -3px;
+        height: 6px;
+        width: 6px;
+        margin-left: 36px;
+        background: linear-gradient(to left, #ae8fff, #7243f2);
+        content: "";
+        border-radius: 50%;
+    }
 }
 
 .button-1 {

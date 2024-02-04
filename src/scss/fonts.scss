@@ -14,11 +14,86 @@ h6 {
 .headline {
     font-size: 50px;
     line-height: 50px;
+    @media screen and (max-width: 1320px) {
+        font-size: 46px;
+        line-height: 46px;
+    }
+    @media screen and (max-width: 1140px) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+.subheadline {
+    font-size: 44px;
+    line-height: 50px;
+    @media screen and (max-width: 1140px) {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
+
+.subheadline-2 {
+    font-size: 36px;
+    line-height: 44px;
+    @media screen and (max-width: 1140px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 .subtitle {
     font-size: 32px;
     line-height: 38px;
+    @media screen and (max-width: 1140px) {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+.subtitle-2 {
+    font-size: 28px;
+    line-height: 36px;
+    @media screen and (max-width: 1140px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @media screen and (max-width: 960px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 .text-highlight {

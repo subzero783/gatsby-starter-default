@@ -5,7 +5,7 @@ import FreeWebsiteSeoAudit from "../forms/free-website-seo-audit"
 export default function Hero() {
   return (
     <section className="hero" style={{ backgroundImage: `url(${bgImageOne})` }}>
-      <div className="container mx-auto grid gap-8 grid-cols-2">
+      <div className="container mx-auto">
         <div className="text-side">
           <span className="small-text mb-5">Welcome to Developer Gus</span>
           <h1 className="headline mb-6">

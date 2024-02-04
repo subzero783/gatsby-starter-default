@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/Hero/Hero"
+import Services from "../components/Services/Services"
 
 const IndexPage = ({ data }) => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => {
         description="Unleashing Digital Brilliance with Developer Gus. Navigating the World of Web Design, Development and Beyond. Empowering Your Business with SEO and Google Ads Mastery."
       />
       <Hero />
+      <Services />
       <ul className="my-9">
         {/* {data.allMarkdownRemark.edges.map(edge => {
           console.log("edge", edge)

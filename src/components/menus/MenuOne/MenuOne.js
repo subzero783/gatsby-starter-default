@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import "./MenuOne.scss"
 
 export default function MenuOne() {
@@ -32,45 +33,54 @@ export default function MenuOne() {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="block py-2 px-3 md:bg-transparent md:p-0"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/portfolio/"
+                className="block py-2 px-3 md:bg-transparent md:p-0"
+                aria-current="page"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog/"
                 className="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0 md:dark:hover:bg-transparent"
               >
-                About
-              </a>
+                Blog
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/services/"
                 className="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0 md:dark:hover:bg-transparent"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/pricing/"
                 className="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0 md:dark:hover:bg-transparent"
               >
                 Pricing
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/contact/"
                 className="block py-2 px-3 md:hover:bg-transparent md:border-0 md:p-0 md:dark:hover:bg-transparent"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
