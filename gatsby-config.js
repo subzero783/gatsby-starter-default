@@ -49,7 +49,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#9977f6`,
         display: `minimal-ui`,
-        icon: `./static/logos/developer-gus-logo-white.png`, // This path is relative to the root of the site.
+        icon: `./static/images/logos/developer-gus-logo-white.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -69,6 +69,21 @@ module.exports = {
       options: {
         cssLoaderOptions: {
           camelCase: false,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        // host: 'https://www.example.com',
+        // sitemap: 'https://www.example.com/sitemap.xml',
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
         },
       },
     },
