@@ -196,7 +196,12 @@ header {
 
 .services {
     .services-columns-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        counter-reset: section;
         > li {
+            width: 32%;
             &.box {
                 position: relative;
                 overflow: hidden;
@@ -209,64 +214,9 @@ header {
                 margin-bottom: 20px;
                 text-decoration: unset;
                 z-index: 2;
+                counter-increment: section;
                 &:nth-child(3n) {
                     margin-right: 0;
-                }
-                &:nth-child(1) {
-                    .count {
-                        &:before {
-                            content: "01";
-                        }
-                    }
-                }
-                &:nth-child(2) {
-                    .count {
-                        &:before {
-                            content: "02";
-                        }
-                    }
-                }
-                &:nth-child(3) {
-                    .count {
-                        &:before {
-                            content: "03";
-                        }
-                    }
-                }
-                &:nth-child(4) {
-                    .count {
-                        &:before {
-                            content: "04";
-                        }
-                    }
-                }
-                &:nth-child(5) {
-                    .count {
-                        &:before {
-                            content: "05";
-                        }
-                    }
-                }
-                &:nth-child(6) {
-                    .count {
-                        &:before {
-                            content: "06";
-                        }
-                    }
-                }
-                &:nth-child(7) {
-                    .count {
-                        &:before {
-                            content: "07";
-                        }
-                    }
-                }
-                &:nth-child(8) {
-                    .count {
-                        &:before {
-                            content: "08";
-                        }
-                    }
                 }
                 .count {
                     position: absolute;
@@ -289,6 +239,7 @@ header {
                         font-family: "Syne", sans-serif;
                         font-weight: 600;
                         font-style: normal;
+                        content: counter(section, decimal-leading-zero);
                     }
                 }
                 .icon {
@@ -320,6 +271,10 @@ header {
                     p {
                         margin-bottom: 0;
                     }
+                }
+                .title h3,
+                .box-text {
+                    transition: all 0.15s ease-in-out;
                 }
                 &:after {
                     position: absolute;
