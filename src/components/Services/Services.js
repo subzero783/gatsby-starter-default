@@ -1,7 +1,29 @@
 import * as React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import iconResponsive from "../../images/png/device.png"
 
 export default function Services() {
+  const data = useStaticQuery(graphql`
+    query ServiceQuery {
+      allMarkdownRemark(
+        filter: { frontmatter: { category: { eq: "service" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              description
+              image
+              category
+            }
+            id
+          }
+        }
+      }
+    }
+  `)
+
+  console.log(data)
   return (
     <section className="services">
       <div className="container mx-auto">
@@ -11,14 +33,14 @@ export default function Services() {
         </h2>
         <ul className="services-columns-container">
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon">
+            <div className="count"></div>
+            <div className="icon">
               <img src={iconResponsive} alt="Responsive web design" />
             </div>
-            <div class="title">
+            <div className="title">
               <h3>Responsive Web Design</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 Responsive web design is a digital design approach that ensures
                 a website's layout and content respond or adapt to the screen
@@ -31,12 +53,12 @@ export default function Services() {
             </div>
           </li>
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon"></div>
-            <div class="title">
+            <div className="count"></div>
+            <div className="icon"></div>
+            <div className="title">
               <h3>Web Development</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 Web development is a multifaceted process that encompasses the
                 creation, design, and maintenance of websites. It involves
@@ -47,12 +69,12 @@ export default function Services() {
             </div>
           </li>
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon"></div>
-            <div class="title">
+            <div className="count"></div>
+            <div className="icon"></div>
+            <div className="title">
               <h3>SEO</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 Search Engine Optimization (SEO) is a digital marketing strategy
                 aimed at improving a website's visibility in search engine
@@ -63,12 +85,12 @@ export default function Services() {
             </div>
           </li>
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon"></div>
-            <div class="title">
+            <div className="count"></div>
+            <div className="icon"></div>
+            <div className="title">
               <h3>UX Front-End</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 UX Front-End Development is a specialized area of web
                 development that focuses on creating user-friendly and intuitive
@@ -80,12 +102,12 @@ export default function Services() {
             </div>
           </li>
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon"></div>
-            <div class="title">
+            <div className="count"></div>
+            <div className="icon"></div>
+            <div className="title">
               <h3>Back-End Development</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 Back-end development refers to the server-side of web
                 development focused on how the website works. It involves
@@ -97,12 +119,12 @@ export default function Services() {
             </div>
           </li>
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon"></div>
-            <div class="title">
+            <div className="count"></div>
+            <div className="icon"></div>
+            <div className="title">
               <h3>HubSpot Development</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 HubSpot development is a specialized aspect of web development
                 that involves creating, designing, and maintaining websites and
@@ -114,12 +136,12 @@ export default function Services() {
             </div>
           </li>
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon"></div>
-            <div class="title">
+            <div className="count"></div>
+            <div className="icon"></div>
+            <div className="title">
               <h3>WordPress</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 WordPress development is a field that revolves around creating
                 and customizing websites within the WordPress Content Management
@@ -130,12 +152,12 @@ export default function Services() {
             </div>
           </li>
           <li className="mb-4 box">
-            <div class="count"></div>
-            <div class="icon"></div>
-            <div class="title">
+            <div className="count"></div>
+            <div className="icon"></div>
+            <div className="title">
               <h3>Google Ads</h3>
             </div>
-            <div class="box-text">
+            <div className="box-text">
               <p>
                 Google Ads marketing is a powerful digital advertising tool that
                 enables businesses to reach their target audience on the Google

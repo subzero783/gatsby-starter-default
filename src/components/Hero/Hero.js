@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         <div className="form-side">
           <div className="hero-form-container">
-            <h2 class="subtitle">
+            <h2 className="subtitle">
               <span>Free Website SEO and Traffic Audit!</span>
             </h2>
             <FreeWebsiteSeoAudit />

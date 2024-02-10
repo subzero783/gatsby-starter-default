@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -32,22 +32,25 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export const query = graphql`
-  query BlogPostQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            date
-          }
-          id
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query ServiceQuery {
+//     allMarkdownRemark(
+//       filter: { frontmatter: { category: { eq: "service" } } }
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             description
+//             image
+//             category
+//           }
+//           id
+//         }
+//       }
+//     }
+//   }
+// `
 
 /**
  * Head export to define metadata for the page

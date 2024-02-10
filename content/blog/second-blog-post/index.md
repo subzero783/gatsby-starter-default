@@ -1,4 +1,5 @@
 ---
+category: blog
 title: Second Blog Post
 date: "1/30/2024"
 description: "Mollit anim exercitation aliquip incididunt pariatur eiusmod ullamco proident ullamco cillum incididunt ullamco."
