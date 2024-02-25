@@ -201,7 +201,7 @@ header {
         justify-content: center;
         counter-reset: section;
         > li {
-            width: 32%;
+            width: 32.5%;
             &.box {
                 position: relative;
                 overflow: hidden;
@@ -357,4 +357,8 @@ header {
             }
         }
     }
+}
+
+footer {
+    padding: 0 15px;
 }

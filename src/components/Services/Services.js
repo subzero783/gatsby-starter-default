@@ -36,7 +36,7 @@ export default function Services() {
             const id = edge.node.id
             return (
               <li className="mb-4 box" key={id}>
-                <Link to={link}>
+                <Link to={`/services${link}`}>
                   <div className="count"></div>
                   <div className="icon">
                     <img src={`./images/services/${image}`} alt={title} />

@@ -38,7 +38,14 @@ module.exports = {
         name: `service`,
         path: `${__dirname}/content/service`,
       },
+      __key: "service",
     },
+    // {
+    //   resolve: `gatsby-transformer-yaml`,
+    //   options: {
+    //     typeName: `Service`,
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {},

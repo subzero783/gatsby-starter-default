@@ -1,0 +1,204 @@
+---
+category: blog
+title: How to Customize a HubSpot Form with CSS and JavaScript
+video_id: m7obEA31cig
+active: true
+url: how-to-customize-a-hubspot-form-with-css-and-javascript
+categories: ["HubSpot", "CSS", "JavaScript", "jQuery", "WordPress"]
+date: "12/05/2022"
+description: "Today I will teach you how to customize a HubSpot form with CSS and JavaScript, including jQuery. Before getting started, you need to have a Hubspot pro account and have already created a form. Let me explain what type of Hubspot account you need. Let&apos;s go to an article that HubSpot has made in their HubSpot Knowledge Base titled &quot;Set up and style a HubSpot form on an external site.&quot; Which I will leave a link to in the description (1). When you click the heading &quot;Style your embedded form with CSS in your external stylesheet &quot; in the article&apos;s table of contents or when you scroll to the bottom. You will see a notice at the bottom of the page that Hubspot mentions. To style your Hubspot form in your external stylesheet, you first need to be subscribed to one of the following Hubspot plans."
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "How to Customize a HubSpot Form with CSS and JavaScript | Developer Gus",
+      "url": "https://www.developergus.com/blog/how-to-customize-a-hubspot-form-with-css-and-javascript/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.developergus.com/blog/how-to-customize-a-hubspot-form-with-css-and-javascript/",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Developer Gus",
+          "item": "https://www.developergus.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog | Developer Gus",
+          "item": "https://www.developergus.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Customize a HubSpot Form with CSS and JavaScript | Developer Gus",
+          "item": "https://www.developergus.com/blog/how-to-customize-a-hubspot-form-with-css-and-javascript/"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.developergus.com/",
+      "url": "https://www.developergus.com/",
+      "name": "Developer Gus",
+      "description": "Need a new website or have pending site updates? Contact Us to Get a Free Quote!",
+      "publisher": {
+        "@id": "https://www.developergus.com/"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.developergus.com/",
+      "url": "https://www.developergus.com/",
+      "name": "Developer Gus",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.developergus.com/assets/images/png/Developer-Gus-white-logo.png"
+      }
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.developergus.com/blog/how-to-customize-a-hubspot-form-with-css-and-javascript/"
+      },
+      "headline": "How to Customize a HubSpot Form with CSS and JavaScript",
+      "description": "Lets go to an article that HubSpot has made in their HubSpot Knowledge Base titled &quot;Set up and style a HubSpot form on an external site.&quot; Which I will leave a link to in the description (1). When you click the heading &quot;Style your embedded form with CSS in your external stylesheet &quot; in the articles table of contents or when you scroll to the bottom. You will see a notice at the bottom of the page that Hubspot mentions. To style your Hubspot form in your external stylesheet, you first need to be subscribed to one of the following Hubspot plans:",
+      "image": "https://www.developergus.com/assets/images/blog/how-to-customize-a-hubspot-form-with-css-and-javascript.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Developer Gus",
+        "url": "https://www.developergus.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Developer Gus",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.developergus.com/assets/images/png/Developer-Gus-white-logo.png"
+        }
+      },
+      "datePublished": "2022-12-05T20:41:03+00:00",
+      "dateModified": "2022-12-05T20:41:03+00:00"
+    }
+  ]
+}
+</script>
+<section id="blog-post">
+  <div class="container">
+    <div class="row">
+      <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="video-container ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/m7obEA31cig?si=oV4FA1gZmSyTbOev" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <p>Today I will teach you how to customize a HubSpot form with CSS and JavaScript, including jQuery.&nbsp;</p>
+        <h2>Required Before Getting Started</h2>
+        <p>Before getting started, you need to have a Hubspot pro account and have already created a form. Let me explain what type of Hubspot account you need.</p>
+        <h2>Subscribed to a Hubspot Pro Account</h2>
+        <p>
+          Let&apos;s go to an article that HubSpot has made in their HubSpot Knowledge Base titled &quot;Set up and style a HubSpot form on an external site.&quot; Which I will leave a link to in the description (1). When you click the heading &quot;Style
+          your embedded form with CSS in your external stylesheet &quot; in the article&apos;s table of contents or when you scroll to the bottom. You will see a notice at the bottom of the page that Hubspot mentions. To style your Hubspot form in your
+          external stylesheet, you first need to be subscribed to one of the following Hubspot plans:&nbsp;
+        </p>
+        <ol>
+          <li>Marketing Hub</li>
+          <li>or CMS Hub Professional</li>
+          <li>or Enterprise</li>
+        </ol>
+        <p>
+          So please make sure to be subscribed. Either to one of those Hubspot plans or to be in a trial of one of those Hubspot plans. I will leave a link to the web page of Products &amp; Plans that Hubspot offers in the description of this video (2).
+          Next, we will open a Hubspot form I created in my account.&nbsp;
+        </p>
+        <br>
+        <h2>Opening and Sharing a Hubspot Form</h2>
+        <p>
+          We do this by logging into our Hubspot account, going to the top menu, clicking the Marketing tab, hovering over the Lead Capture tab, and clicking on the Forms tab. We then click on one of the forms to open the Hubspot form editor or create a new
+          form. In my case, I already made a form that I will now open, as you can see on the right-hand side of this form editor that we have open. You can see I have added several fields, one for the First name, a form field for an Email, and another to
+          write a message.&nbsp;
+        </p>
+        <p>
+          Once you are satisfied with the fields and other content, such as text and logo, that you have added, we click on the Style &amp; preview tab at the top of the page. We need to click the &quot;Set as raw HTML form&quot; toggle to switch it on.
+          According to the Hubspot article we first read, this will: &nbsp;render the form as a &quot;raw HTML element on your external page as opposed to inside an iframe, and any default HubSpot styling applied to the form will be removed.&quot; So
+          that&apos;s what we want, without any Hubspot styling, and we can apply our styling on our site.&nbsp;
+        </p>
+        <h2>Embed the Hubspot Form on Your Website Page</h2>
+        <p>
+          We will then embed the form on one of my web pages by clicking on the Embed button on the top right and clicking on the Copy button at the bottom, which copies the HTML code of the form. I will go to one of the pages on my WordPress website and
+          open the page to edit it. I&apos;m going to log in, go to the Pages, and then click on the&nbsp;
+          <strong>Sample Page</strong>
+          to edit it. I will paste the copied HTML code of the Hubspot form. Let&apos;s quickly look at the page&apos;s front end to see the form. As you can see, the Hubspot form is now viewable on the front end but is missing the styling we will add with
+          CSS. It&apos;s also missing the functionality we will add with JavaScript, explicitly using the jQuery framework.&nbsp;
+        </p>
+        <h2>Adding Styling to the Hubspot Form&nbsp;</h2>
+        <p>
+          To add our styling to the Hubspot form using CSS, we must add the style properties where WordPress will not stop the styling from being added to the HubSpot form. An ideal place is in the style.css file, which is at the root of your child theme.
+          Another way to add our custom CSS for the HubSpot form is to add a style tag above the HubSpot script tag.&nbsp;
+        </p>
+        <p>
+          I will choose to add a style tag, and I must first minify the CSS properties before adding them. I need to do this before updating the page because the default WordPress WYSIWYG editor you see when editing every page and post will add a paragraph p
+          tag around your CSS code. WordPress will wrap not only CSS code but also JavaScript code. So to avoid that, what you can do is minify the CSS and JavaScript code inside the default WordPress WYSIWYG editor.&nbsp;
+        </p>
+        <p>
+          I will copy the CSS properties I have written from a file and then paste them into a CSS autoprefixer. This one is called Autoprefixer CSS Online, and I will add a link to it in the description (3). Once you have prefixed the CSS properties so they
+          may work on the various browsers that people use, I will copy the CSS and paste it into an online CSS minifier. I will add a link to it in the description (4). Now that I have minified the CSS code, I will paste it into the WYSIWYG page editor
+          above the script tag inside a style tag. Let&apos;s save the page, visit the front end, and see if the form has styling. As you can see, the form now has styling.
+        </p>
+        <br>
+        <h2>Adding the Functionality to the HubSpot Form</h2>
+        <p>
+          To add JavaScript to the HubSpot form, I will add it inside the script tag of the WYSIWYG editor, specifically inside the HubSpot script. What we have been doing is customizing the embed code of the HubSpot form. One of the conditions to add
+          JavaScript to the HubSpot form is to ensure the embed code is raw HTML which I already did. I will then add a configuration option to the JavaScript code that came with the HubSpot form. The configuration option is called &quot;onFormReady,&quot;
+          and it will have a callback function. You can find this information in a HubSpot article called &quot;How to customize the form embed code,&quot; which I will leave a link to in the description (5). Inside this callback function is where I added my
+          custom JavaScript with jQuery code.
+        </p>
+        <p>
+          All it does is move the label element of each field to the top of it whenever a user focuses on the area by clicking on it, and it does the reverse when a user unfocuses from the field area by clicking somewhere else. So let&apos;s add my
+          JavaScript code to the form by copying and pasting it into a JavaScript minifier; I copy this code, paste it inside the script tag, and finally add all of the HTML to the HubSpot form. Let&apos;s look at the front end to see if the functionality is
+          working now. Great! I have now finished adding the styling and functionality to the HubSpot form.&nbsp;
+        </p>
+        <h2>Conclusion</h2>
+        <p>That is how you customize a HubSpot form with CSS and JavaScript. The steps are to:</p>
+        <ol>
+          <li>Create a HubSpot form. &nbsp;</li>
+          <li>Set the HubSpot form to raw HTML when editing in HubSpot.&nbsp;</li>
+          <li>Add the embed code to your website, and&nbsp;</li>
+          <li>Add styling and functionality.&nbsp;</li>
+        </ol>
+        <p>
+          For the styling, remember to minify it if you&apos;ve put it inside of a WordPress WYSIWYG editor. When adding JavaScript to a HubSpot form, it has to go inside the form script embed code using one of the configuration options HubSpot gives you.
+          Thank you for watching this tutorial; remember to let me know what next topic you would like to learn. In the description of this video, I will leave links to all the sites I used as tools to help me and also links to all the code as minified and
+          unminified. Remember to like this video and subscribe to my channel to get a notification of my newest web development video.&nbsp;
+        </p>
+        <h2>References</h2>
+        <ol>
+          <li>
+            <a href="https://knowledge.hubspot.com/forms/how-can-i-share-a-hubspot-form-if-im-using-an-external-site" aria-label="Set up and style a HubSpot form on an external site" rel="noreferrer noopener" target="_blank">Set up and style a HubSpot form on an external site</a>
+          </li>
+          <li>
+            <a href="https://www.hubspot.com/pricing/marketing?products=marketing-hub-starter_1&amp;term=annual" aria-label="Marketing Software Pricing | HubSpot" rel="noreferrer noopener" target="_blank">
+              Marketing Software Pricing | HubSpot
+            </a>
+          </li>
+          <li>
+            <a href="https://autoprefixer.github.io/" aria-label="Autoprefixer CSS online" rel="noreferrer noopener" target="_blank">Autoprefixer CSS online</a>
+          </li>
+          <li>
+            <a href="https://www.toptal.com/developers/cssminifier" aria-label="Online CSS Minifier Tool and Compressor, with Fast and Simple API Access" target="_blank" rel="noreferrer noopener">Online CSS Minifier Tool and Compressor, with Fast and Simple API Access</a>
+          </li>
+          <li>
+            <a href="https://legacydocs.hubspot.com/docs/methods/forms/advanced_form_options" aria-label="How to customize the form embed code" target="_blank" rel="noreferrer noopener">
+              How to customize the form embed code
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
